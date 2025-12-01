@@ -41,11 +41,7 @@ public class ClienteReservasWS {
     public static void main(String[] args)  {
 
     	try {
-            AuxiliarClienteWS gestor = new AuxiliarClienteWS();
-
-            System.out.println("Lookup completed ");
-            // invoke the remote method
-            
+            AuxiliarClienteWS gestor = new AuxiliarClienteWS();            
             
             Scanner teclado = new Scanner(System.in);
             

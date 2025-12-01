@@ -28,7 +28,7 @@ public class AuxiliarClienteWS {
         	response = cliente.target(baseURI)
         			.path("guardar")
         			.request()
-        			.get();
+        			.post(Entity.text(""));
         	
         	int estado = response.getStatus();
         	System.out.print(estado);
@@ -75,7 +75,7 @@ public class AuxiliarClienteWS {
         try {
         	response = cliente.target(baseURI)
         			.path("disponibles")
-        			.queryParam(actividad)
+        			.queryParam("actividad", actividad)
         			.request(MediaType.APPLICATION_JSON)
         			.get();
         	
